@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="display()" id="body">
+    <div class="container" id="container">
+        <div class="display">
+            <div class="instructions">
+                <h3>Disclaimer</h3>
+                <h3>All questions and answers are referenced from <a href="https://www.javatpoint.com/javascript-mcq">javatpoint</a></a></h3>
+                <h3>Practice these 9 questions and see result after submitting</h3>
+            </div>
+            <div class="quesOptions">
+                <h3 class="ques">Q<span id="qno"></span>) <span id="question"></span></h3>
+                </br>
+                <ol type="a" class="list">
+                    <li>
+                        <input type="radio" name="answer" id="ans1" onclick="saveAns('a')">
+                        <span id="option1" ></span>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="ans2" onclick="saveAns('b')">
+                        <span id="option2"></span>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="ans3" onclick="saveAns('c')">
+                        <span id="option3"></span>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" id="ans4" onclick="saveAns('d')">
+                        <span id="option4"></span>
+                    </li>
+                </ol>
+            </div>
+            </br>
+            <div class="navigatebttns">
+                <button onclick="prev()" class="button" id="prevbttn" style="float: left;">Previous</button>
+                <button onclick="next()" class="button" id="nextbttn" style="float: right;">Next</button>
+            </div>
+            <div style="clear:both;"></div>
+            <div class="clearbttn">
+                <button class="button" id="submit" style="width: 90%;" onclick="clearClick()">Clear</button>
+            </div>
+        </div>
+        <div class="answerList">            
+            <div class="answered">
+                <h3><span style="float: left;color: rgb(7, 241, 7);">Green=Answered</span>
+                    <span style="float: right;color: rgb(255, 30, 30);">Red=Not Answered</span>
+                </h3>
+                
+                <h3 style="text-align: center;">Click to Navigate</h3>                
+                <button class="navigateQuestion" id="ques1" onclick="navDirect(0)">1</button>
+                <button class="navigateQuestion" id="ques2" onclick="navDirect(1)">2</button>
+                <button class="navigateQuestion" id="ques3" onclick="navDirect(2)" style="margin-right: 0px;">3</button>
+                <button class="navigateQuestion" id="ques4" onclick="navDirect(3)">4</button>
+                <button class="navigateQuestion" id="ques5" onclick="navDirect(4)">5</button>
+                <button class="navigateQuestion" id="ques6" onclick="navDirect(5)" style="margin-right: 0px;">6</button>
+                <button class="navigateQuestion" id="ques7" onclick="navDirect(6)">7</button>
+                <button class="navigateQuestion" id="ques8" onclick="navDirect(7)">8</button>
+                <button class="navigateQuestion" id="ques9" onclick="navDirect(8)" style="margin-right: 0px;">9</button>
+                <button class="submitButton" onclick="submit()">SUBMIT</button>
+            </div>    
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+    <div class="ansFinal" id="ansFinal">
+        <h4>You got <span id="mark"></span> marks</h4>
+    </div>
+    <div class="footer">
+        <a href="https://github.com/MercifulSamurai142/Quiz-v1.0" target="_blank">Source Code</a> || <a href="https://github.com/MercifulSamurai142" target="_blank">MercifulSamurai142</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

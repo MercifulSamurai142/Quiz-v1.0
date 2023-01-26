@@ -1,0 +1,106 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: whitesmoke;
+    border-radius: 25px;
+    color: aqua;
+}
+button{
+    background-color: #181818;
+    border-width: 0;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: wheat;
+    color: black;
+    border-radius: 50px;
+    box-shadow: 15px 15px 2px #181818;
+}
+button:active{
+    background-color: rgb(7, 241, 7);
+    color: rgb(255, 30, 30);
+}
+.container{
+    width: 100%;
+    background-color: #3F4346;
+    display: flex;
+    border-radius: 0;
+    height: 95vh;
+
+}
+.display{
+    float: left;
+    width: 50% ;
+    text-align: center;
+    
+    margin-top: 10px;
+}
+.quesOptions{
+    background-color: #181818;
+    width: 94%;
+    margin-left: 3%;
+    padding: 20px;
+}
+.button{
+    margin-right:5%;
+    margin-left:5%;
+    width: 40%;
+    height: 75px;
+    margin-top: 30px;
+}
+.ques{
+    margin-left: auto;
+}
+.list{
+    display: inline-block;
+    text-align: left;
+}
+.answerList{
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+.answered{
+    width: 95%;
+    height: 100%;
+}
+.navigateQuestion{
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    margin-top: 20px;
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+    color: black;
+    font-size: large;
+}
+.submitButton{
+    width: 100%;
+    margin-top: 50px;
+    height: 100px;
+}
+.submitButton:hover::after{
+    content: "-Check before submit";
+    transition-delay: .4s;
+}
+.instructions{
+    background-color: #181818;
+    margin-bottom: 30px;
+    padding: 30px;
+    width: 94%;
+    margin-left: 3%;
+}
+.footer{
+    background-color: #3F4346;
+    border-radius: 0;
+    height: 5vh;
+    margin-right: auto;
+    text-align: center;
+}
+.ansFinal{
+    display: none;
+    height: 90vh;
+    background-color: #181818;
+    border-radius: 0;
+}
